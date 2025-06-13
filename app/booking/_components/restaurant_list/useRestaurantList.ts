@@ -23,8 +23,8 @@ export function useRestaurantList() {
     const getData = async () => {
 
       const { body } = await get({
-        apiName: 'bookingApi',
-        path: `${API_ENDPOINT}/booking`,
+        apiName: 'api',
+        path: `/booking`,
       }).response;
 
       const data = await body.json();
@@ -38,7 +38,7 @@ export function useRestaurantList() {
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       results = cards.filter(
-        (restaurant) =>
+        (restaurant: any) =>
           restaurant.name.toLowerCase().includes(query) ||
           restaurant.cuisine.toLowerCase().includes(query) ||
           restaurant.priceLevel?.toString().includes(query) ||
