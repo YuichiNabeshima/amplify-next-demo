@@ -1,0 +1,1 @@
+export const API_ENDPOINT = 'https://main.d2cd5voynjvo8y.amplifyapp.com/';

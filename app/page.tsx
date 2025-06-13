@@ -26,7 +26,7 @@ import { Button } from '~/components/ui/button';
 import { Card, CardContent } from '~/components/ui/card';
 import { Image } from '~/components/ui/image/image';
 
-export default function Route() {
+export default function Page() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
