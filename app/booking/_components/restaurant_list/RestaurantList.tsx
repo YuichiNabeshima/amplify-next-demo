@@ -16,6 +16,8 @@ import { type PriceLevel } from '@/src/types/PriceLabel';
 import { Pagination } from './pagenation/Pagenation';
 import { useRestaurantList } from './useRestaurantList';
 
+export const dynamic = 'force-dynamic';
+
 export function RestaurantList() {
   const { filteredRestaurants, currentRestaurants, totalPages, currentPage } = useRestaurantList();
 

@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { get } from 'aws-amplify/api';
 
+export const dynamic = 'force-dynamic';
+
 export function useRestaurantList() {
   const [totalPages, setTotalPages] = useState(1);
   const [cards, setCards] = useState<any>([]);

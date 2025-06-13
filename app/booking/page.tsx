@@ -9,6 +9,8 @@
 import { Index } from './_components/Index';
 import { QUERY_PARAMS } from './_constants/QUERY_PARAMS';
 
+export const dynamic = 'force-dynamic';
+
 // export async function loader({ request }: Route.LoaderArgs) {
 //   const url = new URL(request.url);
 //   const searchParams = url.searchParams;

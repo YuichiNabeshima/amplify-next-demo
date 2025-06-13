@@ -14,6 +14,8 @@ import {
   DropdownMenuTrigger,
 } from '~/components/ui/dropdown-menu';
 
+export const dynamic = 'force-dynamic';
+
 export function FilterBar() {
   const searchParams = useSearchParams();
   const router = useRouter();
