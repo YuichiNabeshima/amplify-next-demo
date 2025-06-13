@@ -3,7 +3,7 @@ import type { APIGatewayProxyHandlerV2 } from "aws-lambda";
 export const handler: APIGatewayProxyHandlerV2 = async (event) => {
   let body = {};
   switch (event.routeKey) {
-    case 'GET /':
+    case 'GET /booking':
       body = 'Get Yuichi';
       break;
     case 'POST /':

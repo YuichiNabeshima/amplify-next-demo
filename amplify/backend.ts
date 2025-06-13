@@ -13,7 +13,7 @@ const httpLambdaIntegration = new HttpLambdaIntegration(
   backend.apiFunction.resources.lambda
 );
 const httpApi = new HttpApi(apiStack, "HttpApi", {
-  apiName: "bookingApi",
+  apiName: "api",
   corsPreflight: {
     allowMethods: [
       CorsHttpMethod.GET,
@@ -28,7 +28,7 @@ const httpApi = new HttpApi(apiStack, "HttpApi", {
 });
 
 httpApi.addRoutes({
-  path: "/",
+  path: "/booking",
   methods: [HttpMethod.GET],
   integration: httpLambdaIntegration,
 });

@@ -8,13 +8,6 @@
 import { Index } from './_components/Index';
 import { QUERY_PARAMS } from './_constants/QUERY_PARAMS';
 
-export function meta() {
-  return [
-    { title: `Vancouver Dining - My Booking` },
-    { name: 'description', content: `Vancouver Dining - My Booking` },
-  ];
-}
-
 // export async function loader({ request }: Route.LoaderArgs) {
 //   const url = new URL(request.url);
 //   const searchParams = url.searchParams;
