@@ -1,3 +1,5 @@
+'use client';
+
 import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react';
 import { useSearchParams } from 'react-router';
 
