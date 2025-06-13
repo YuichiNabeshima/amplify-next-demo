@@ -8,8 +8,8 @@ import type { ITransactionManager } from '~/.server/core/transaction/ITransactio
 import { GLOBAL_DI_TYPES } from '~/.server/di_container/GLOBAL_DI_TYPES';
 import type { BusinessRepositoryDTO } from '~/.server/repositories/dtos/BusinessRepositoryDTO';
 import type { IBusinessRepository } from '~/.server/repositories/interfaces/IBusinessRepository';
-import type { CuisineKind } from '~/types/enums/CuisineKind';
-import type { Neighborhood } from '~/types/enums/Neighborhood';
+import type { CuisineKind } from '@/src/types/enums/CuisineKind';
+import type { Neighborhood } from '@/src/types/enums/Neighborhood';
 
 import type { ActionServiceArgsDTO, ActionServiceResultDTO } from '../dtos/ActionServiceDTO';
 import type { IActionService } from '../interfaces/IActionService';

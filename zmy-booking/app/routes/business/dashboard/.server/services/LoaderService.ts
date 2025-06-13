@@ -12,7 +12,7 @@ import type { IBusinessHoursRepository } from '~/.server/repositories/interfaces
 import type { IBusinessRepository } from '~/.server/repositories/interfaces/IBusinessRepository';
 import type { ICourseRepository } from '~/.server/repositories/interfaces/ICourseRepository';
 import type { ICustomerRepository } from '~/.server/repositories/interfaces/ICustomerRepository';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
 import { isTime } from '~/utils/guards/isTime';
 import { minutesToTimeFormat } from '~/utils/minutesToTimeFormat';
 

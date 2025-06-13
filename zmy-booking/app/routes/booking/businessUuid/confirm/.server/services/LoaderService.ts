@@ -6,7 +6,7 @@ import { CourseNotFoundError } from '~/.server/core/custom_error/errors/reposito
 import { GLOBAL_DI_TYPES } from '~/.server/di_container/GLOBAL_DI_TYPES';
 import type { IBusinessRepository } from '~/.server/repositories/interfaces/IBusinessRepository';
 import type { ICourseRepository } from '~/.server/repositories/interfaces/ICourseRepository';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
 import type { CreateBookingConfirmationDataTokenPayload } from '~/utils/createBookingConfirmationDataToken.server';
 
 import type { LoaderServiceArgsDTO, LoaderServiceResultDTO } from '../dtos/LoaderServiceDTO';

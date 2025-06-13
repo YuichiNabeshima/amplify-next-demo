@@ -11,7 +11,7 @@ import {
   TableHeader,
   TableRow,
 } from '~/components/ui/table';
-import { BOOKING_STATUS } from '~/constants/enums/BOOKING_STATUS';
+import { BOOKING_STATUS } from '@/src/constants/enums/BOOKING_STATUS';
 import { cn } from '~/lib/utils';
 
 import type { LoaderResultDTO } from '../../.server/dtos/LoaderResultDTO';

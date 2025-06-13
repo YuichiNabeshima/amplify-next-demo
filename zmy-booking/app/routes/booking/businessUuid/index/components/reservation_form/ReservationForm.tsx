@@ -16,14 +16,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from '~/components/ui/select';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
 import {
   BUSINESS_HOURS_KIND,
   BUSINESS_HOURS_KIND_LABEL,
-} from '~/constants/enums/BUSINESS_HOURS_KIND';
+} from '@/src/constants/enums/BUSINESS_HOURS_KIND';
 import { cn } from '~/lib/utils';
-import type { BusinessHoursKind } from '~/types/enums/BusinessHoursKind';
-import type { CustomerKind } from '~/types/enums/CustomerKind';
+import type { BusinessHoursKind } from '@/src/types/enums/BusinessHoursKind';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
 
 import { FORM_NAME } from '../../constants/FORM_NAME';
 import { INTENT_KIND } from '../../constants/INTENT_KIND';

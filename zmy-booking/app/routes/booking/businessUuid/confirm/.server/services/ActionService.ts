@@ -11,8 +11,8 @@ import type { IBusinessRepository } from '~/.server/repositories/interfaces/IBus
 import type { ICourseRepository } from '~/.server/repositories/interfaces/ICourseRepository';
 import type { ICustomerRepository } from '~/.server/repositories/interfaces/ICustomerRepository';
 import type { IEmailQueueRepository } from '~/.server/repositories/interfaces/IEmailQueueRepository';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
-import { MY_BOOKING } from '~/constants/MY_BOOKING';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
+import { MY_BOOKING } from '@/src/constants/MY_BOOKING';
 
 import { STATUS } from '../../constants/STATUS';
 import type { ActionServiceArgsDTO, ActionServiceResultDTO } from '../dtos/ActionServiceDTO';

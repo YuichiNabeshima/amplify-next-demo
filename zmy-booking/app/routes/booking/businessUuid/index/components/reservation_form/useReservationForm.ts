@@ -2,13 +2,13 @@ import { useAtom, useSetAtom } from 'jotai';
 import { useEffect, useState } from 'react';
 import { useActionData, useFetcher, useLoaderData } from 'react-router';
 
-import { AVAILABILITY_PARAMS } from '~/constants/AVAILABLITY_PARAMS';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
-import { DAY_OF_WEEK, DAY_OF_WEEK_MAP } from '~/constants/DAY_OF_WEEK';
-import { BUSINESS_HOURS_KIND } from '~/constants/enums/BUSINESS_HOURS_KIND';
-import { TIME_SLOTS } from '~/constants/TIME_SLOT';
-import type { BusinessHoursKind } from '~/types/enums/BusinessHoursKind';
-import type { CustomerKind } from '~/types/enums/CustomerKind';
+import { AVAILABILITY_PARAMS } from '@/src/constants/AVAILABLITY_PARAMS';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
+import { DAY_OF_WEEK, DAY_OF_WEEK_MAP } from '@/src/constants/DAY_OF_WEEK';
+import { BUSINESS_HOURS_KIND } from '@/src/constants/enums/BUSINESS_HOURS_KIND';
+import { TIME_SLOTS } from '@/src/constants/TIME_SLOT';
+import type { BusinessHoursKind } from '@/src/types/enums/BusinessHoursKind';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
 
 import type { Availability } from '../../../availability/route';
 import type { LoaderServiceResultDTO } from '../../.server/dtos/LoaderServiceDTO';

@@ -14,7 +14,7 @@ import {
 } from '~/components/ui/card';
 import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
-import { STATUS } from '~/constants/STATUS';
+import { STATUS } from '@/src/constants/STATUS';
 
 import { FORM_NAME } from '../constants/FORM_NAME';
 import type { action } from '../route';

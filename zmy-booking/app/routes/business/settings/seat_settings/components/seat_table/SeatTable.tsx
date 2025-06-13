@@ -14,8 +14,8 @@ import {
   TableRow,
 } from '~/components/ui/table';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '~/components/ui/tooltip';
-import { DAY_OF_WEEK } from '~/constants/DAY_OF_WEEK';
-import { BUSINESS_HOURS_KIND } from '~/constants/enums/BUSINESS_HOURS_KIND';
+import { DAY_OF_WEEK } from '@/src/constants/DAY_OF_WEEK';
+import { BUSINESS_HOURS_KIND } from '@/src/constants/enums/BUSINESS_HOURS_KIND';
 
 import { TIME_SEGMENTS } from '../../constants/TIME_SEGMENTS';
 import type { Week } from '../../types/BookingLimit';

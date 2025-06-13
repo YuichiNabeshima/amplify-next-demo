@@ -1,4 +1,4 @@
-import type { BookingStatus } from '~/types/enums/BookingStatus';
+import type { BookingStatus } from '@/src/types/enums/BookingStatus';
 
 export interface ActionServiceArgsDTO {
   bookingId: number;

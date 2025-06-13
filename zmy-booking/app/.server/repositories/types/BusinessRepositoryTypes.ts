@@ -1,6 +1,6 @@
-import type { CuisineKind } from '~/types/enums/CuisineKind';
-import type { Neighborhood } from '~/types/enums/Neighborhood';
-import type { PriceLevel } from '~/types/PriceLabel';
+import type { CuisineKind } from '@/src/types/enums/CuisineKind';
+import type { Neighborhood } from '@/src/types/enums/Neighborhood';
+import type { PriceLevel } from '@/src/types/PriceLabel';
 
 export interface FilterCondition {
   cuisine?: CuisineKind[];

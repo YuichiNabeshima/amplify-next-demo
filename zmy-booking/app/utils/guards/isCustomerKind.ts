@@ -1,5 +1,5 @@
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
-import type { CustomerKind } from '~/types/enums/CustomerKind';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
 
 export function isCustomerKind(arg: string): arg is CustomerKind {
   if (arg === CUSTOMER_KIND.SINGLE || arg === CUSTOMER_KIND.GROUP) {

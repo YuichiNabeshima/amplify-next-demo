@@ -6,8 +6,8 @@ import type { ITransactionManager } from '~/.server/core/transaction/ITransactio
 import { GLOBAL_DI_TYPES } from '~/.server/di_container/GLOBAL_DI_TYPES';
 import type { BusinessHoursRepositoryDTO } from '~/.server/repositories/dtos/BusinessHoursRepositoryDTO';
 import type { IBusinessHoursRepository } from '~/.server/repositories/interfaces/IBusinessHoursRepository';
-import type { BusinessHoursKind } from '~/types/enums/BusinessHoursKind';
-import type { DayOfWeek } from '~/types/enums/DayOfWeek';
+import type { BusinessHoursKind } from '@/src/types/enums/BusinessHoursKind';
+import type { DayOfWeek } from '@/src/types/enums/DayOfWeek';
 
 import type { ActionServiceArgsDTO, ActionServiceResultDTO } from '../dtos/ActionServiceDTO';
 import type { IActionService } from '../interfaces/IActionService';

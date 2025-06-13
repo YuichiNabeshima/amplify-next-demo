@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
 import { createBookingConfirmationDataToken } from '~/utils/createBookingConfirmationDataToken.server';
 
 import { DI_TYPES } from '../di_container/DI_TYPES';

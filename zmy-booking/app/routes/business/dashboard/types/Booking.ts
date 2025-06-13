@@ -1,5 +1,5 @@
-import type { BookingStatus } from '~/types/enums/BookingStatus';
-import type { Time } from '~/types/Time';
+import type { BookingStatus } from '@/src/types/enums/BookingStatus';
+import type { Time } from '@/src/types/Time';
 
 export interface Booking {
   id: number;

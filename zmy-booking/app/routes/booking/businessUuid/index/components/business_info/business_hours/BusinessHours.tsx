@@ -1,8 +1,8 @@
 import { Calendar, Clock } from 'lucide-react';
 
-import { DAY_OF_WEEK } from '~/constants/DAY_OF_WEEK';
-import { BUSINESS_HOURS_KIND } from '~/constants/enums/BUSINESS_HOURS_KIND';
-import type { DayOfWeek } from '~/types/enums/DayOfWeek';
+import { DAY_OF_WEEK } from '@/src/constants/DAY_OF_WEEK';
+import { BUSINESS_HOURS_KIND } from '@/src/constants/enums/BUSINESS_HOURS_KIND';
+import type { DayOfWeek } from '@/src/types/enums/DayOfWeek';
 
 import { useBusinessHours } from './useBusinessHours';
 

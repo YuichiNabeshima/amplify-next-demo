@@ -1,4 +1,4 @@
-import type { DayOfWeek } from '~/types/enums/DayOfWeek';
+import type { DayOfWeek } from '@/src/types/enums/DayOfWeek';
 
 export interface TimeSegments {
   time_0_1: number;

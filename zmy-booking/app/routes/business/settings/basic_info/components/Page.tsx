@@ -16,13 +16,13 @@ import {
   SelectValue,
 } from '~/components/ui/select';
 import { Switch } from '~/components/ui/switch';
-import { CUISINE_KIND } from '~/constants/enums/CUISINE_KIND';
-import { NEIGHBORHOOD } from '~/constants/enums/NEIGHBORHOOD';
-import { PRICE_LABEL } from '~/constants/PRICE_LABEL';
-import { PRICE_DISPLAY_LABEL } from '~/constants/PRICE_LABEL';
-import type { CuisineKind } from '~/types/enums/CuisineKind';
-import type { Neighborhood } from '~/types/enums/Neighborhood';
-import type { PriceLevel } from '~/types/PriceLabel';
+import { CUISINE_KIND } from '@/src/constants/enums/CUISINE_KIND';
+import { NEIGHBORHOOD } from '@/src/constants/enums/NEIGHBORHOOD';
+import { PRICE_LABEL } from '@/src/constants/PRICE_LABEL';
+import { PRICE_DISPLAY_LABEL } from '@/src/constants/PRICE_LABEL';
+import type { CuisineKind } from '@/src/types/enums/CuisineKind';
+import type { Neighborhood } from '@/src/types/enums/Neighborhood';
+import type { PriceLevel } from '@/src/types/PriceLabel';
 
 import { showToastAtom } from '../../_layout/stores/toast';
 import type { ActionDTO } from '../.server/dtos/ActionDTO';

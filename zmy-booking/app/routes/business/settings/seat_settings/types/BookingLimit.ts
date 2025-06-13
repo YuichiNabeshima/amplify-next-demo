@@ -1,4 +1,4 @@
-import type { DayOfWeek } from '~/types/enums/DayOfWeek';
+import type { DayOfWeek } from '@/src/types/enums/DayOfWeek';
 
 import type { TIME_SEGMENTS } from '../constants/TIME_SEGMENTS';
 

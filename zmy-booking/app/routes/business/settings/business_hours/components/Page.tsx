@@ -5,8 +5,8 @@ import { z } from 'zod';
 import { Button } from '~/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
 import { Input } from '~/components/ui/input';
-import { DAY_OF_WEEK } from '~/constants/DAY_OF_WEEK';
-import { BUSINESS_HOURS_KIND } from '~/constants/enums/BUSINESS_HOURS_KIND';
+import { DAY_OF_WEEK } from '@/src/constants/DAY_OF_WEEK';
+import { BUSINESS_HOURS_KIND } from '@/src/constants/enums/BUSINESS_HOURS_KIND';
 
 import { schema } from '../schemas/schema';
 import { usePage } from './usePage';

@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 
-import type { Time } from '~/types/Time';
+import type { Time } from '@/src/types/Time';
 import type { CreateBookingConfirmationDataTokenPayload } from '~/utils/createBookingConfirmationDataToken.server';
 
 import { DI_TYPES } from './.server/di_container/DI_TYPES';

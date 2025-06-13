@@ -1,4 +1,4 @@
-import type { NEIGHBORHOOD } from '~/constants/enums/NEIGHBORHOOD';
+import type { NEIGHBORHOOD } from '@/src/constants/enums/NEIGHBORHOOD';
 
 export type Neighborhood = keyof typeof NEIGHBORHOOD;
 

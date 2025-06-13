@@ -6,10 +6,10 @@ import { Button } from '~/components/ui/button';
 import { Card, CardContent, CardFooter } from '~/components/ui/card';
 import { Image } from '~/components/ui/image/image';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '~/components/ui/tooltip';
-import { CUISINE_KIND, CUISINE_KIND_LABEL } from '~/constants/enums/CUISINE_KIND';
-import { NEIGHBORHOOD, NEIGHBORHOOD_LABEL } from '~/constants/enums/NEIGHBORHOOD';
-import { PRICE_DISPLAY_LABEL, PRICE_LABEL } from '~/constants/PRICE_LABEL';
-import { type PriceLevel } from '~/types/PriceLabel';
+import { CUISINE_KIND, CUISINE_KIND_LABEL } from '@/src/constants/enums/CUISINE_KIND';
+import { NEIGHBORHOOD, NEIGHBORHOOD_LABEL } from '@/src/constants/enums/NEIGHBORHOOD';
+import { PRICE_DISPLAY_LABEL, PRICE_LABEL } from '@/src/constants/PRICE_LABEL';
+import { type PriceLevel } from '@/src/types/PriceLabel';
 
 import { Pagination } from './pagenation/Pagenation';
 import { useRestaurantList } from './useRestaurantList';

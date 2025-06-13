@@ -1,5 +1,5 @@
 import type { BookingCapacityRepositoryDTO } from '~/.server/repositories/dtos/BookingCapacityRepositoryDTO';
-import type { Time } from '~/types/Time';
+import type { Time } from '@/src/types/Time';
 
 export class BookingCapacityManagerService {
   private timeSlots: Record<Time, number>;

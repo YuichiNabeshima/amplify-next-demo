@@ -5,8 +5,8 @@ import { parseWithZod } from '@conform-to/zod';
 import { BusinessNotFoundError } from '~/.server/core/custom_error/errors/repositories/BusinessNotFoundError';
 import type { ILogger } from '~/.server/core/logger/ILogger';
 import { GLOBAL_DI_TYPES } from '~/.server/di_container/GLOBAL_DI_TYPES';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
-import type { CustomerKind } from '~/types/enums/CustomerKind';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
 import { isTime } from '~/utils/guards/isTime';
 
 import { DI_TYPES } from './.server/di_container/DI_TYPES';

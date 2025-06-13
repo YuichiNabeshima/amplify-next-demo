@@ -6,10 +6,10 @@ import { useActionData, useLoaderData } from 'react-router';
 import { z } from 'zod';
 
 import type { BusinessHoursRepositoryDTO } from '~/.server/repositories/dtos/BusinessHoursRepositoryDTO';
-import { DAY_OF_WEEK } from '~/constants/DAY_OF_WEEK';
-import { BUSINESS_HOURS_KIND } from '~/constants/enums/BUSINESS_HOURS_KIND';
-import type { BusinessHoursKind } from '~/types/enums/BusinessHoursKind';
-import type { DayOfWeek } from '~/types/enums/DayOfWeek';
+import { DAY_OF_WEEK } from '@/src/constants/DAY_OF_WEEK';
+import { BUSINESS_HOURS_KIND } from '@/src/constants/enums/BUSINESS_HOURS_KIND';
+import type { BusinessHoursKind } from '@/src/types/enums/BusinessHoursKind';
+import type { DayOfWeek } from '@/src/types/enums/DayOfWeek';
 
 import { showToastAtom, type ToastStatus } from '../../_layout/stores/toast';
 import { FORM_NAME } from '../constants/FORM_NAME';

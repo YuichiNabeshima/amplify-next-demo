@@ -5,9 +5,9 @@ import { get, post } from 'aws-amplify/api';
 
 export function useRestaurantList() {
   const [totalPages, setTotalPages] = useState(1);
-  const [cards, setCards] = useState<any[]>([]);
+  const [cards, setCards] = useState<any>([]);
   const searchParams = useSearchParams();
-  const [filteredRestaurants, setFilteredRestaurants] = useState<any[]>([]);
+  const [filteredRestaurants, setFilteredRestaurants] = useState<any>([]);
 
   // Get current page from URL or default to 1
   const currentPage = Number.parseInt(searchParams.get('page') || '1', 10);

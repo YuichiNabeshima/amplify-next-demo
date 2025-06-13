@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 
-import type { CustomerKind } from '~/types/enums/CustomerKind';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
 
 interface CreateBookingConfirmationDataTokenArgs {
   numberOfGuests: number;

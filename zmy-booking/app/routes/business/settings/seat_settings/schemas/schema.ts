@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { DAY_OF_WEEK } from '~/constants/DAY_OF_WEEK';
+import { DAY_OF_WEEK } from '@/src/constants/DAY_OF_WEEK';
 
 import { TIME_SEGMENTS } from '../constants/TIME_SEGMENTS';
 import type { Week } from '../types/BookingLimit';

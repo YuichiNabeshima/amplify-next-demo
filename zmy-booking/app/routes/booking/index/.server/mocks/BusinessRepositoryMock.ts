@@ -6,8 +6,8 @@ import type { BusinessRepositoryDTO } from '~/.server/repositories/dtos/Business
 import type { BusinessTagRepositoryDTO } from '~/.server/repositories/dtos/BusinessTagRepositoryDTO';
 import type { IBusinessRepository } from '~/.server/repositories/interfaces/IBusinessRepository';
 import type { FetchBusinessesArgs } from '~/.server/repositories/types/BusinessRepositoryTypes';
-import { CUISINE_KIND } from '~/constants/enums/CUISINE_KIND';
-import { NEIGHBORHOOD } from '~/constants/enums/NEIGHBORHOOD';
+import { CUISINE_KIND } from '@/src/constants/enums/CUISINE_KIND';
+import { NEIGHBORHOOD } from '@/src/constants/enums/NEIGHBORHOOD';
 
 @injectable()
 export class BusinessRepositoryMock

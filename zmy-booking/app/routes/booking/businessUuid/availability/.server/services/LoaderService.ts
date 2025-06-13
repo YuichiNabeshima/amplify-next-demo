@@ -9,8 +9,8 @@ import type { IBookingCapacityRepository } from '~/.server/repositories/interfac
 import type { IBookingRepository } from '~/.server/repositories/interfaces/IBookingRepository';
 import type { IBusinessRepository } from '~/.server/repositories/interfaces/IBusinessRepository';
 import type { ICourseRepository } from '~/.server/repositories/interfaces/ICourseRepository';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
-import { DAY_OF_WEEK_ARRAY } from '~/constants/DAY_OF_WEEK';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
+import { DAY_OF_WEEK_ARRAY } from '@/src/constants/DAY_OF_WEEK';
 import { isDayOfWeek } from '~/utils/guards/isDayOfWeek';
 
 import type { LoaderServiceArgsDTO, LoaderServiceResultDTO } from '../dtos/LoaderServiceDTO';

@@ -1,6 +1,6 @@
 import type { BusinessHoursRepositoryDTO } from '~/.server/repositories/dtos/BusinessHoursRepositoryDTO';
-import { BUSINESS_HOURS_KIND } from '~/constants/enums/BUSINESS_HOURS_KIND';
-import { TIME_SLOTS } from '~/constants/TIME_SLOT';
+import { BUSINESS_HOURS_KIND } from '@/src/constants/enums/BUSINESS_HOURS_KIND';
+import { TIME_SLOTS } from '@/src/constants/TIME_SLOT';
 
 type TimeSlot = {
   time: string;

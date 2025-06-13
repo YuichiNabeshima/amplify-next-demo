@@ -1,4 +1,4 @@
-import type { CustomerKind } from '~/types/enums/CustomerKind';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
 
 export interface LoaderServiceArgsDTO {
   businessUuid: string;

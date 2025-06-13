@@ -3,7 +3,7 @@ import { injectable } from 'inversify';
 import { BaseRepository } from '~/.server/repositories/base/BaseRepository';
 import type { BookingRepositoryDTO } from '~/.server/repositories/dtos/BookingRepositoryDTO';
 import type { IBookingRepository } from '~/.server/repositories/interfaces/IBookingRepository';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
 
 @injectable()
 export class BookingRepositoryMock

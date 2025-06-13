@@ -2,7 +2,7 @@ import { inject, injectable } from 'inversify';
 
 import { GLOBAL_DI_TYPES } from '~/.server/di_container/GLOBAL_DI_TYPES';
 import type { IBusinessHoursRepository } from '~/.server/repositories/interfaces/IBusinessHoursRepository';
-import { DAY_OF_WEEK } from '~/constants/DAY_OF_WEEK';
+import { DAY_OF_WEEK } from '@/src/constants/DAY_OF_WEEK';
 
 import { BaseBatch } from '../BaseBatch';
 

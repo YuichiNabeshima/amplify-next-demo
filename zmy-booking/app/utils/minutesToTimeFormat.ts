@@ -1,5 +1,5 @@
 import { InvalidTimeFormatError } from '~/.server/core/custom_error/errors/InvalidTimeFormatError';
-import type { Time } from '~/types/Time';
+import type { Time } from '@/src/types/Time';
 
 import { isTime } from './guards/isTime';
 

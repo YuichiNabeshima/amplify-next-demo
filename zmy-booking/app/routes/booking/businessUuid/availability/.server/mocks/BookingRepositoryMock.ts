@@ -1,8 +1,8 @@
 import { BaseRepository } from '~/.server/repositories/base/BaseRepository';
 import type { BookingRepositoryDTO } from '~/.server/repositories/dtos/BookingRepositoryDTO';
 import type { IBookingRepository } from '~/.server/repositories/interfaces/IBookingRepository';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
-import type { CustomerKind } from '~/types/enums/CustomerKind';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
 
 export class BookingRepositoryMock
   extends BaseRepository<{ TModel: Partial<BookingRepositoryDTO> }>

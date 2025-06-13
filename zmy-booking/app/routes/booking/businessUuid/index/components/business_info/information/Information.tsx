@@ -1,7 +1,7 @@
 import { Info, MapPin, Utensils } from 'lucide-react';
 import { useLoaderData } from 'react-router';
 
-import { PRICE_DISPLAY_LABEL, PRICE_LABEL } from '~/constants/PRICE_LABEL';
+import { PRICE_DISPLAY_LABEL, PRICE_LABEL } from '@/src/constants/PRICE_LABEL';
 
 import type { loader } from '../../../route';
 

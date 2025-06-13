@@ -1,5 +1,5 @@
-import type { BookingStatus } from '~/types/enums/BookingStatus';
-import type { CustomerKind } from '~/types/enums/CustomerKind';
+import type { BookingStatus } from '@/src/types/enums/BookingStatus';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
 
 export interface LoaderServiceArgsDTO {
   bookingId: number;

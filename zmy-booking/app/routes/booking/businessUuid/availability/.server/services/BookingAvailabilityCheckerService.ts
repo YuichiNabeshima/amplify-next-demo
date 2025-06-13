@@ -1,4 +1,4 @@
-import type { Time } from '~/types/Time';
+import type { Time } from '@/src/types/Time';
 
 import { BookingCapacityManagerService } from './BookingCapacityManagerService';
 import { BookingTrackerService } from './BookingTrackerService';

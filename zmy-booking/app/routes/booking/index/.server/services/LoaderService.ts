@@ -4,9 +4,9 @@ import type { IImageStorage } from '~/.server/core/image_storage/IImageStorage';
 import { GLOBAL_DI_TYPES } from '~/.server/di_container/GLOBAL_DI_TYPES';
 import type { BusinessPictureRepositoryDTO } from '~/.server/repositories/dtos/BusinessPictureRepositoryDTO';
 import type { IBusinessRepository } from '~/.server/repositories/interfaces/IBusinessRepository';
-import type { CuisineKind } from '~/types/enums/CuisineKind';
-import type { Neighborhood } from '~/types/enums/Neighborhood';
-import type { PriceLevel } from '~/types/PriceLabel';
+import type { CuisineKind } from '@/src/types/enums/CuisineKind';
+import type { Neighborhood } from '@/src/types/enums/Neighborhood';
+import type { PriceLevel } from '@/src/types/PriceLabel';
 
 import { ITEMS_IN_PAGE } from '../../constants/ITEMS_IN_PAGE';
 import type { RestaurantCard } from '../../types/RestaurantCard';

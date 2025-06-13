@@ -1,6 +1,6 @@
 import { CustomBaseError } from '~/.server/core/custom_error/custom_base_error';
-import { AVAILABILITY_PARAMS } from '~/constants/AVAILABLITY_PARAMS';
-import { STATUS } from '~/constants/STATUS';
+import { AVAILABILITY_PARAMS } from '@/src/constants/AVAILABLITY_PARAMS';
+import { STATUS } from '@/src/constants/STATUS';
 import { isCustomerKind } from '~/utils/guards/isCustomerKind';
 
 import type { Route } from '../index/+types/route';

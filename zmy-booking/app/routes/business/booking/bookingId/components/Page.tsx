@@ -13,8 +13,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '~/components/ui/select';
-import { CUSTOMER_KIND_LABEL } from '~/constants/CUSTOMER_KIND';
-import { BOOKING_STATUS } from '~/constants/enums/BOOKING_STATUS';
+import { CUSTOMER_KIND_LABEL } from '@/src/constants/CUSTOMER_KIND';
+import { BOOKING_STATUS } from '@/src/constants/enums/BOOKING_STATUS';
 import { ActionToast } from '~/routes/business/settings/_layout/components/ActionToast';
 import { showToastAtom } from '~/routes/business/settings/_layout/stores/toast';
 

@@ -3,8 +3,8 @@ import { injectable } from 'inversify';
 import { BaseRepository } from '~/.server/repositories/base/BaseRepository';
 import type { BookingCapacityRepositoryDTO } from '~/.server/repositories/dtos/BookingCapacityRepositoryDTO';
 import type { IBookingCapacityRepository } from '~/.server/repositories/interfaces/IBookingCapacityRepository';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
-import { DAY_OF_WEEK } from '~/constants/DAY_OF_WEEK';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
+import { DAY_OF_WEEK } from '@/src/constants/DAY_OF_WEEK';
 
 @injectable()
 export class BookingCapacityRepositoryMock

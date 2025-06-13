@@ -6,8 +6,8 @@ import type { CustomerRepositoryDTO } from '~/.server/repositories/dtos/Customer
 import type { IBookingRepository } from '~/.server/repositories/interfaces/IBookingRepository';
 import type { ICourseRepository } from '~/.server/repositories/interfaces/ICourseRepository';
 import type { ICustomerRepository } from '~/.server/repositories/interfaces/ICustomerRepository';
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
-import type { CustomerKind } from '~/types/enums/CustomerKind';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
 
 import { BaseBatch } from '../BaseBatch';
 import { QueueLoop } from '../QueueLoop';

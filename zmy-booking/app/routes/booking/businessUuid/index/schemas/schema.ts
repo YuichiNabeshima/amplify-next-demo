@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { CUSTOMER_KIND } from '~/constants/CUSTOMER_KIND';
+import { CUSTOMER_KIND } from '@/src/constants/CUSTOMER_KIND';
 
 import { FORM_NAME } from '../constants/FORM_NAME';
 import { INTENT_KIND } from '../constants/INTENT_KIND';

@@ -1,5 +1,5 @@
-import type { CustomerKind } from '~/types/enums/CustomerKind';
-import type { DayOfWeek } from '~/types/enums/DayOfWeek';
+import type { CustomerKind } from '@/src/types/enums/CustomerKind';
+import type { DayOfWeek } from '@/src/types/enums/DayOfWeek';
 
 export interface BookingCapacityRepositoryDTO {
   id: number;
