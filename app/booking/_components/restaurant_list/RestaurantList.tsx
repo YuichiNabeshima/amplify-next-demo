@@ -1,5 +1,5 @@
 import { MapPin } from 'lucide-react';
-import { Link } from 'react-router';
+import Link from 'next/link';
 
 import { Badge } from '~/components/ui/badge';
 import { Button } from '~/components/ui/button';
@@ -33,7 +33,7 @@ export function RestaurantList() {
                 className="overflow-hidden transition-all duration-300 hover:shadow-lg py-0 gap-y-6"
               >
                 <div className="relative h-48 w-full overflow-hidden">
-                  <Link to={`/booking/${restaurant.uuid}`} className="cursor-pointer">
+                  <Link href={`/booking/${restaurant.uuid}`} className="cursor-pointer">
                     <Image
                       src={restaurant.thumbnail || '/img/common/no_image_01.png'}
                       alt={restaurant.name}
@@ -89,7 +89,7 @@ export function RestaurantList() {
                 </CardContent>
 
                 <CardFooter className="p-4 pt-0">
-                  <Link to={`/booking/${restaurant.uuid}`} className="w-full">
+                  <Link href={`/booking/${restaurant.uuid}`} className="w-full">
                     <Button className="w-full cursor-pointer">Book a Table</Button>
                   </Link>
                 </CardFooter>
