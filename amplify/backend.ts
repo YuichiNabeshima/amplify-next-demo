@@ -1,49 +1,51 @@
 import { defineBackend } from "@aws-amplify/backend";
 import { Stack } from "aws-cdk-lib";
-import {
-  RestApi,
-  LambdaIntegration,
-  Cors,
-  AuthorizationType
-} from "aws-cdk-lib/aws-apigateway";
-import { myApiFunction } from "./functions/booking/src/resource";
+import { CorsHttpMethod, HttpApi, HttpMethod } from "aws-cdk-lib/aws-apigatewayv2";
+import { HttpLambdaIntegration } from "aws-cdk-lib/aws-apigatewayv2-integrations";
+import { apiFunction } from "./functions/booking-function/src/resource";
 
 const backend = defineBackend({
-  myApiFunction,
+  apiFunction,
 });
-
 const apiStack = backend.createStack("api-stack");
-
-const myRestApi = new RestApi(apiStack, "RestApi", {
-  restApiName: "myRestApi",
-  deploy: true,
-  deployOptions: {
-    stageName: "dev",
-  },
-  defaultCorsPreflightOptions: {
-    allowOrigins: Cors.ALL_ORIGINS,
-    allowMethods: Cors.ALL_METHODS,
-    allowHeaders: Cors.DEFAULT_HEADERS,
-  },
-});
-
-const lambdaIntegration = new LambdaIntegration(
-  backend.myApiFunction.resources.lambda
+const httpLambdaIntegration = new HttpLambdaIntegration(
+  "LambdaIntegration",
+  backend.apiFunction.resources.lambda
 );
-
-const itemsPath = myRestApi.root.addResource("items", {
-  defaultMethodOptions: {
-    authorizationType: AuthorizationType.NONE,  // 認証なしでまず試す
+const httpApi = new HttpApi(apiStack, "HttpApi", {
+  apiName: "bookingApi",
+  corsPreflight: {
+    allowMethods: [
+      CorsHttpMethod.GET,
+      CorsHttpMethod.POST,
+      CorsHttpMethod.PUT,
+      CorsHttpMethod.DELETE,
+    ],
+    allowOrigins: ["*"],
+    allowHeaders: ["*"],
   },
+  createDefaultStage: true,
 });
 
-itemsPath.addMethod("GET", lambdaIntegration);
+httpApi.addRoutes({
+  path: "/",
+  methods: [HttpMethod.GET],
+  integration: httpLambdaIntegration,
+});
+
+httpApi.addRoutes({
+  path: "/",
+  methods: [HttpMethod.POST],
+  integration: httpLambdaIntegration,
+});
 
 backend.addOutput({
   custom: {
     API: {
-      [myRestApi.restApiName]: {
-        endpoint: myRestApi.url,
+      [httpApi.httpApiName!]: {
+        endpoint: httpApi.url,
+        region: Stack.of(httpApi).region,
+        apiName: httpApi.httpApiName,
       },
     },
   },

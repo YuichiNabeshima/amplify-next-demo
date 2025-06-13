@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { API_ENDPOINT } from '@/src/constants/API_ENDPOINT';
-import { get } from 'aws-amplify/api';
+import { get, post } from 'aws-amplify/api';
 
 export function useRestaurantList() {
   const [totalPages, setTotalPages] = useState(1);
@@ -22,9 +22,10 @@ export function useRestaurantList() {
   useEffect(() => {
     const getData = async () => {
 
-      const body = await fetch(
-        `${API_ENDPOINT}/booking`
-      );
+      const { body } = await get({
+        apiName: 'bookingApi',
+        path: `${API_ENDPOINT}/booking`,
+      }).response;
 
       const data = await body.json();
       setCards(data);
