@@ -1,3 +1,4 @@
+'use client';
 // import type { ILogger } from '~/.server/core/logger/ILogger';
 // import { GLOBAL_DI_TYPES } from '~/.server/di_container/GLOBAL_DI_TYPES';
 
