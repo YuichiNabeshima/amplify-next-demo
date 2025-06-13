@@ -3,6 +3,8 @@
 import { FilterBar } from './restaurant_list/filter_bar/FilterBar';
 import { RestaurantList } from './restaurant_list/RestaurantList';
 
+export const dynamic = 'force-dynamic';
+
 export function Index() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-background to-muted/50">
