@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { API_ENDPOINT } from '@/src/constants/API_ENDPOINT';
-import { get, post } from 'aws-amplify/api';
+import { get } from 'aws-amplify/api';
 
 export function useRestaurantList() {
   const [totalPages, setTotalPages] = useState(1);

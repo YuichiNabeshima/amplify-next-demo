@@ -27,7 +27,7 @@ export function RestaurantList() {
       ) : (
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-12">
-            {currentRestaurants.map((restaurant, idx) => (
+            {currentRestaurants.map((restaurant: any, idx: number) => (
               <Card
                 key={idx}
                 className="overflow-hidden transition-all duration-300 hover:shadow-lg py-0 gap-y-6"
@@ -80,7 +80,7 @@ export function RestaurantList() {
                   </p>
 
                   <div className="flex flex-wrap gap-1">
-                    {restaurant.tags.map((tag, index) => (
+                    {restaurant.tags.map((tag: any, index: number) => (
                       <Badge key={index} variant="outline" className="text-xs">
                         {tag}
                       </Badge>
