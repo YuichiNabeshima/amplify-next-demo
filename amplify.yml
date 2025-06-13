@@ -10,9 +10,8 @@ frontend:
     build:
       commands:
         - npm run build
-        - npx tsc --project tsconfig.build.json
   artifacts:
-    baseDirectory: .next
+    baseDirectory: .next/standalone
     files:
       - '**/*'
   cache:
